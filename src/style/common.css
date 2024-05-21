@@ -1,0 +1,41 @@
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px;
+    align-items: center;
+    justify-items: start;
+}
+
+.entry {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+form > button {
+    padding: 5px;
+}
+
+.entry span {
+    font-size: 0.8rem;
+    height: 50px;
+    color: white;
+    background-color: white;
+}
+
+.error.active {
+    background-color: lightcoral;
+}
